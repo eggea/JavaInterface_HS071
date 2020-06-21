@@ -20,7 +20,7 @@ This jipopt library was compiled by the source [Ipopt-3.12.13](https://www.coin-
 
 1) Clone this GIT Project to Eclipse 
 
-2) Add the folder "jni_dependency" to Windows PATH variable (See README.TXT)
+2) Add the folder "jni_dependency" to Windows PATH variable (See [README.TXT](https://github.com/eggea/JavaInterface_HS071/blob/master/JavaInterface_HS071/jni_dependency/README.TXT))
 
 3) Restart Eclipse
 
@@ -28,5 +28,5 @@ This jipopt library was compiled by the source [Ipopt-3.12.13](https://www.coin-
 
 ## Authors
 
-* **Rodrigo Eggea** - *Initial work* - [Rodrigo Eggea](https://github.com/eggea)
+* **[Rodrigo Eggea](https://github.com/eggea)** 
 
