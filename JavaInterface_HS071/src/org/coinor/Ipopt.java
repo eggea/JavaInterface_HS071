@@ -9,8 +9,6 @@
 package org.coinor;
 
 import java.io.File;
-import java.lang.reflect.Field;
-import java.util.Arrays;
 
 /** A Java Native Interface for the Ipopt optimization solver.
  * <p>
@@ -151,30 +149,7 @@ public abstract class Ipopt
 	{
 		// Loads the library
 		File file = new File(path, System.mapLibraryName(DLL));
-		//handle = dlopen("c:/JIPOPT64/jipopt.dll", RTLD_LAZY | RTLD_GLOBAL);
-		try {
-			addLibraryPath("c:/JIPOPT64");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 		System.load(file.getAbsolutePath());
-		
-		
-	}
-	
-	public static void addLibraryPath(String pathToAdd) throws Exception {
-	    Field usrPathsField = ClassLoader.class.getDeclaredField("usr_paths");
-	    usrPathsField.setAccessible(true);
-
-	    String[] paths = (String[]) usrPathsField.get(null);
-
-	    for (String path : paths)
-	        if (path.equals(pathToAdd))
-	            return;
-
-	    String[] newPaths = Arrays.copyOf(paths, paths.length + 1);
-	    newPaths[newPaths.length - 1] = pathToAdd;
-	    usrPathsField.set(null, newPaths);
 	}
 
 	/** Callback function for the variable bounds and constraint sides. */  
