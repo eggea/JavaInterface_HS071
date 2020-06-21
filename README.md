@@ -9,7 +9,7 @@ The [Official Jipopt website](https://projects.coin-or.org/Ipopt/wiki/JavaInterf
 
 Due to the lack of this jipopt library compiled for Java Runtime 64-bits, I compiled and providing in this repository with the original sample code HS71 together with the 64-bit compiled jipopt.dll. 
 
-This jipopt library was compiled by the source [Ipopt-3.12.13](https://www.coin-or.org/download/source/Ipopt/Ipopt-3.12.13.tgz) in Windows10 using MSYS-64bits and following the instructions [Installing Ipopt](https://coin-or.github.io/Ipopt/INSTALL.html) with some workarounds.
+This jipopt library was compiled by the source [Ipopt-3.12.13](https://www.coin-or.org/download/source/Ipopt/Ipopt-3.12.13.tgz) in Windows10 using [MSYS2-64bits](https://www.msys2.org/) and following the instructions [Installing Ipopt](https://coin-or.github.io/Ipopt/INSTALL.html) with some workarounds.
 
 ### Prerequisites
 [Java JDK 64-bits for Windows](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html) - Java SE Development Kit
